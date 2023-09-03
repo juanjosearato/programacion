@@ -19,62 +19,6 @@ class Cursos:
     foto=""
     estado=""
 
-class Categorias:
-    inicial=""
-    intermendio=""
-    avanzado=""
-
-class Clase:
-    fecha=""
-    titulo=""
-    contenido=""
-    URLDrive=""
-
-class Docentes:
-    apellido=""
-    nombre=""
-    dni=int
-    fechaNacimiento=int
-    dirección=""
-    localidad=""
-    codigoPostal=int
-    provincia=""
-    telefonoCelular=int
-    email=""
-
-class Usuarios:
-    nombre=""
-    apellido=""
-    dni_II=int
-    direccion=""
-    fechaNacimiento=""
-    localidad=""
-    codigoPostal=""
-    provincia=""
-    telefonoCelular=""
-    email=""
-    clave=""
-    reconfirmarClave=""
-    estado=""
-
-class Carrito_Compra:
-    foto=""
-    titulo_del_curso=""
-    duracion=""
-    costo=""
-
-class Medio_Pago:
-    tarjeta_debito=""
-    tarjeta_credito=""
-    transferencia_bancaria=""
-
-class Datos_del_Pago:
-    nombre_titular=""
-    numero_tarjeta=int
-    fecha_vencimiento=int
-    DNI=int
-
-
 # estado (disponible o no disponible, en base a su estado deberán verse o no en el sitio).
 
     def __init__(self, FechaComienzo, Titulo, Descripcion, Objetivos, Programa, Costo, DuracionEnMeses, Foto, Estado):
@@ -128,4 +72,78 @@ class Datos_del_Pago:
         self.estado=Estado
 
 
+class Categorias:
+    inicial=""
+    intermendio=""
+    avanzado=""
 
+    def __init__(self, Inicial, Intermedio, Avanzado):
+        self.inicial=Inicial
+        self.intermedio=Intermedio
+        self.avanzado=Avanzado
+
+    def getInicial(self):
+        return self.inicial
+    def getIntermedio(self):
+        return self.intermendio
+    def getAvanzado(self):
+        return self.avanzado
+    
+
+    def setinicial(self,Inicial):
+        self.inicial=Inicial
+    def setintermendio(self,Intermedio):
+        self.intermedio=Intermedio
+    def setavanzado(self,Avanzado):
+        self.avanzado=Avanzado
+
+
+class Clase:
+    fecha=""
+    titulo=""
+    contenido=""
+    URLDrive=""
+
+class Docentes:
+    apellido=""
+    nombre=""
+    dni=int
+    fechaNacimiento=int
+    dirección=""
+    localidad=""
+    codigoPostal=int
+    provincia=""
+    telefonoCelular=int
+    email=""
+
+class Usuarios:
+    nombre=""
+    apellido=""
+    dni_II=int
+    direccion=""
+    fechaNacimiento=""
+    localidad=""
+    codigoPostal=""
+    provincia=""
+    telefonoCelular=""
+    email=""
+    clave=""
+    reconfirmarClave=""
+    estado=""
+
+class Carrito_Compra:
+    foto=""
+    titulo_del_curso=""
+    duracion=""
+    costo=""
+
+class Medio_Pago:
+    tarjeta_debito=""
+    tarjeta_credito=""
+    transferencia_bancaria=""
+
+class Datos_del_Pago:
+    nombre_titular=""
+    numero_tarjeta=int
+    fecha_vencimiento=int
+    DNI=int
