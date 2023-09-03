@@ -142,7 +142,7 @@ class Docentes:
     telefonoCelular=int
     email=""
 
-    def __init__(self, Apellido, Nombre, DNI, FechaNacimiento, Direccion, Localidad, CodigoPostal,Provincia, TelefonoCelular,Email):
+    def __init__(self, Apellido, Nombre, DNI, FechaNacimiento, Direccion, Localidad, CodigoPostal, Provincia, TelefonoCelular, Email):
         self.apellido=Apellido
         self.nombre=Nombre
         self.dni=DNI
@@ -194,7 +194,7 @@ class Docentes:
         self.provincia=provincia
     def settelefonoCelular(self,telefonoCelular):
         self.telefonoCelular=telefonoCelular
-    def email(self,email):
+    def setemail(self,email):
         self.email=email
 
 
@@ -212,6 +212,82 @@ class Usuarios:
     clave=""
     reconfirmarClave=""
     estado=""
+
+    def __init__(self, Nombre, Apellido, Dni_II, Direccion, FechaNacimiento, Localidad, CodigoPostal,
+                 Provincia, TelefonoCelular, Email, Clave, ReconfirmarCalve, Estado):
+        self.nombre=Nombre
+        self.apellido=Apellido
+        self.dni_II=Dni_II
+        self.direccion=Direccion
+        self.fechaNacimiento=FechaNacimiento
+        self.localidad=Localidad
+        self.codigoPostal=CodigoPostal
+        self.provincia=Provincia
+        self.telefonoCelular=TelefonoCelular
+        self.email=Email
+        self.clave=Clave
+        self.reconfirmarClave=ReconfirmarCalve
+        self.estado=Estado
+        
+
+    def getnombre(self):
+        return self.nombre
+    def getapellido(self):
+        return self.apellido
+    def getdni_II(self):
+        return self.dni_II
+    def getdireccion(self):
+        return self.direccion
+    def getfechaNacimiento(self):
+        return self.fechaNacimiento
+    def getlocalidad(self):
+        return self.localidad
+    def getcodigoPostal(self):
+        return self.codigoPostal
+    def getprovincia(self):
+        return self.provincia
+    def gettelefonoCelular(self):
+        return self.telefonoCelular
+    def getemail(self):
+        return self.email
+    def getclave(self):
+        return self.clave
+    def getreconfirmarClave(self):
+        return self.reconfirmarClave
+    def getestado(self):
+        return self.estado
+    
+   
+    def setnombre(self,nombre):
+        self.nombre=nombre
+    def setapellido(self,apellido):
+        self.apellido=apellido
+    def setdni_II(self,dni_II):
+        self.dni_II=dni_II
+    def setdireccion(self,direccion):
+        self.direccion=direccion
+    def setfechaNacimiento(self,fechaNacimiento):
+        self.fechaNacimiento=fechaNacimiento
+    def setdireccion(self,direccion):
+        self.direccion=direccion
+    def setlocalidad(self,localidad):
+        self.localidad=localidad
+    def setcodigoPostal(self,codigoPostal):
+        self.codigoPostal=codigoPostal
+    def setprovincia(self,provincia):
+        self.provincia=provincia
+    def settelefonoCelular(self,telefonoCelular):
+        self.telefonoCelular=telefonoCelular
+    def setemail(self,email):
+        self.email=email
+    def setclave(self,clave):
+        self.clave=clave
+    def setreconfirmarClave(self,reconfirmarClave):
+        self.reconfirmarClave
+    def setestado(self,estado):
+        self.estado
+    
+
 
 class Carrito_Compra:
     foto=""
