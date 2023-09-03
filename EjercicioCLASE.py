@@ -104,7 +104,7 @@ class Clase:
     contenido=""
     URLDrive=""
 
-def __init__(self, Fecha, Titulo, Contenido, URLDRIVE):
+    def __init__(self, Fecha, Titulo, Contenido, URLDRIVE):
         self.fecha=Fecha
         self.titulo=Titulo
         self.contenido=Contenido
@@ -141,6 +141,62 @@ class Docentes:
     provincia=""
     telefonoCelular=int
     email=""
+
+    def __init__(self, Apellido, Nombre, DNI, FechaNacimiento, Direccion, Localidad, CodigoPostal,Provincia, TelefonoCelular,Email):
+        self.apellido=Apellido
+        self.nombre=Nombre
+        self.dni=DNI
+        self.fechaNacimiento=FechaNacimiento
+        self.direccion=Direccion
+        self.localidad=Localidad
+        self.codigoPostal=CodigoPostal
+        self.provincia=Provincia
+        self.telefonoCelular=TelefonoCelular
+        self.email=Email
+
+    def getapellido(self):
+        return self.apellido
+    def getnombre(self):
+        return self.nombre
+    def getdni(self):
+        return self.dni
+    def getfechaNacimiento(self):
+        return self.fechaNacimiento
+    def getdireccion(self):
+        return self.direccion
+    def getlocalidad(self):
+        return self.localidad
+    def getcodigoPostal(self):
+        return self.codigoPostal
+    def getprovincia(self):
+        return self.provincia
+    def gettelefonoCelular(self):
+        return self.telefonoCelular
+    def getemail(self):
+        return self.email
+
+
+    def setapellido(self,apellido):
+        self.apellido=apellido
+    def setnombre(self,nombre):
+        self.nombre=nombre
+    def setdni(self,dni):
+        self.dni=dni
+    def setfechaNacimiento(self,fechaNacimiento):
+        self.fechaNacimiento=fechaNacimiento
+    def setdireccion(self,direccion):
+        self.direccion=direccion
+    def setlocalidad(self,localidad):
+        self.localidad=localidad
+    def setcodigoPostal(self,codigoPostal):
+        self.codigoPostal=codigoPostal
+    def setprovincia(self,provincia):
+        self.provincia=provincia
+    def settelefonoCelular(self,telefonoCelular):
+        self.telefonoCelular=telefonoCelular
+    def email(self,email):
+        self.email=email
+
 
 class Usuarios:
     nombre=""
