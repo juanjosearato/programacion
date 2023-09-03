@@ -104,6 +104,32 @@ class Clase:
     contenido=""
     URLDrive=""
 
+def __init__(self, Fecha, Titulo, Contenido, URLDRIVE):
+        self.fecha=Fecha
+        self.titulo=Titulo
+        self.contenido=Contenido
+        self.URLDrive=URLDRIVE
+
+    def getfecha(self):
+        return self.fecha
+    def gettitulo(self):
+        return self.titulo
+    def getcontenido(self):
+        return self.contenido
+    def getURLDrive(self):
+        return self.URLDrive
+    
+
+    def setfecha(self,Fecha):
+        self.fecha=Fecha
+    def settitulo(self,Titulo):
+        self.titulo=Titulo
+    def setcontenido(self,Contenido):
+        self.contenido=Contenido
+    def setURLDrive(self,URLDRIVE):
+        self.URLDrive=URLDRIVE
+
+
 class Docentes:
     apellido=""
     nombre=""
