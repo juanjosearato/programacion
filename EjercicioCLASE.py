@@ -295,13 +295,79 @@ class Carrito_Compra:
     duracion=""
     costo=""
 
+    def __init__(self, Foto, Titulo_del_curso, Duracion, Costo):
+        self.foto=Foto
+        self.titulo_del_curo=Titulo_del_curso
+        self.duracion=Duracion
+        self.costo=Costo
+
+    def getfoto(self):
+        return self.foto
+    def gettitulo_del_curso(self):
+        return self.titulo_del_curso
+    def getduracion(self):
+        return self.duracion
+    def getcosto(self):
+        return self.costo
+    
+
+    def setfoto(self,Foto):
+        self.foto=Foto
+    def settitulo_del_curso(self,Titulo_del_curso):
+        self.titulo_del_curso=Titulo_del_curso
+    def setduracion(self,Duracion):
+        self.duracion=Duracion
+    def setcosto(self,Costo):
+        self.costo=Costo
+
 class Medio_Pago:
     tarjeta_debito=""
     tarjeta_credito=""
     transferencia_bancaria=""
 
+    def __init__(self, Tarjeta_debito, Tarjeta_credito, Transferencia_bancaria):
+        self.tarjeta_debito=Tarjeta_debito
+        self.tarjeta_credito=Tarjeta_credito
+        self.transferencia_bancaria=Transferencia_bancaria
+
+    def gettarjeta_debito(self):
+        return self.tarjeta_debito
+    def gettarjeta_credito(self):
+        return self.tarjeta_credito
+    def gettransferencia_bancaria(self):
+        return self.transferencia_bancaria
+    
+
+    def settarjeta_debito(self,Tarjeta_debito):
+        self.tarjeta_debito=Tarjeta_debito
+    def settarjeta_credito(self,Tarjeta_credito):
+        self.tarjeta_credito=Tarjeta_credito
+    def settransferenia_bancaria(self,Transferencia_bancaria):
+        self.transferencia_bancaria=Transferencia_bancaria
+
 class Datos_del_Pago:
     nombre_titular=""
     numero_tarjeta=int
     fecha_vencimiento=int
-    DNI=int
+    dni=int
+
+    def __init__(self, Nombre_titular, Numero_tarjeta, Fecha_vencimiento, Dni):
+        self.nombre_titular=Nombre_titular
+        self.numero_tarjeta=Numero_tarjeta
+        self.fecha_vencimiento=Fecha_vencimiento
+        self.dni=Dni
+
+    def getnombre_titular(self):
+        return self.nombre_titular
+    def getnumero_tarjeta(self):
+        return self.numero_tarjeta
+    def getfecha_vencimiento(self):
+        return self.fecha_vencimiento
+    
+
+    def setnombre_titular(self,Nombre_titular):
+        self.nombre_titular=Nombre_titular
+    def setnumero_tarjeta(self,Numero_tarjeta):
+        self.numero_tarjeta=Numero_tarjeta
+    def setfecha_vencimiento(self,Fecha_vencimiento):
+        self.fecha_vencimiento=Fecha_vencimiento
